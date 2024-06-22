@@ -74,19 +74,19 @@ class GameMap {
   movePlayer(direction) {
     if (this.canMove(direction)) {
       switch (direction) {
-        case "up":
+        case "u":
           this.player.y--;
           this.player.state = "up";
           break;
-        case "down":
+        case "d":
           this.player.y++;
           this.player.state = "down";
           break;
-        case "left":
+        case "l":
           this.player.x--;
           this.player.state = "left";
           break;
-        case "right":
+        case "r":
           this.player.x++;
           this.player.state = "right";
           break;
